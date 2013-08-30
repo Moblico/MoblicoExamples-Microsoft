@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Package xmlns="http://schemas.microsoft.com/appx/2010/manifest">
+  <Identity Name="MoblicoSolutionsLLC.MoblicoExampleWindowsWNSPushAp" Publisher="CN=1B43E0E1-DBBA-45E7-BE70-0067F7C7B236" Version="1.0.0.0" />
+  <Properties>
+    <DisplayName>Moblico Example Windows WNS Push App</DisplayName>
+    <PublisherDisplayName>Moblico Solutions, LLC</PublisherDisplayName>
+    <Logo>Assets\StoreLogo.png</Logo>
+  </Properties>
+  <Prerequisites>
+    <OSMinVersion>6.2.1</OSMinVersion>
+    <OSMaxVersionTested>6.2.1</OSMaxVersionTested>
+  </Prerequisites>
+  <Resources>
+    <Resource Language="x-generate" />
+  </Resources>
+  <Applications>
+    <Application Id="App" Executable="$targetnametoken$.exe" EntryPoint="PushNotifications-Tablet.App">
+      <VisualElements DisplayName="Moblico Example Windows WNS Push App" Logo="Assets\Logo.png" SmallLogo="Assets\SmallLogo.png" Description="PushNotifications-Tablet" ForegroundText="light" BackgroundColor="#464646" ToastCapable="true">
+        <DefaultTile ShowName="allLogos" />
+        <SplashScreen Image="Assets\SplashScreen.png" />
+      </VisualElements>
+    </Application>
+  </Applications>
+  <Capabilities>
+    <Capability Name="internetClient" />
+  </Capabilities>
+</Package>
